@@ -53,7 +53,7 @@ fig, axes = plt.subplots(5, 5)
 vmin, vmax = mlp.coefs_[0].min(), mlp.coefs_[0].max()
 for coef, ax in zip(mlp.coefs_[0].T, axes.ravel()):
     #ax.matshow(coef.reshape(28, 28), cmap=plt.cm.gray, vmin=.5 * vmin, vmax=.5 * vmax)
-    ax.matshow(coef.reshape(28, 28), cmap=plt.cm.gray,vmin=vmin, vmax=vmax)
+    ax.matshow(coef.reshape(28, 28), cmap=plt.cm.gray, vmin=vmin, vmax=vmax)
     ax.set_xticks(())
     ax.set_yticks(())
 
